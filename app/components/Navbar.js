@@ -64,7 +64,7 @@ const Header = () => {
         {/* Navbar Links */}
         <div className={`${styles.navLinks} hidden md:flex`}>
           <Link href="/" className={`${styles.navLink} ${isScrolled ? "text-black" : "text-black"} ${isActiveLink("/")}`}>
-            الصفحة الرئيسية
+            Home
           </Link>
           <div
             className={styles.dropdown}
@@ -75,18 +75,18 @@ const Header = () => {
               href="/about"
               className={`${styles.navLink} ${isScrolled ? "text-black" : "text-black"} ${isActiveLink("/about")}`}
             >
-              من نحن
+              About Us
               <i className="ri-arrow-down-s-line ml-1" />
             </Link>
             <ul className={`${styles.dropdownMenu} ${dropdownOpen.about ? "" : styles.dropdownMenuHidden}`}>
               <li>
                 <Link href="/file" className={styles.dropdownMenuItem}>
-                  مَلَفّ
+                  Profile
                 </Link>
               </li>
               <li>
                 <Link href="/ourClients" className={styles.dropdownMenuItem}>
-                  عملائنا
+                  Our Clients
                 </Link>
               </li>
             </ul>
@@ -95,7 +95,7 @@ const Header = () => {
             href="/services"
             className={`${styles.navLink} ${isScrolled ? "text-black" : "text-black"} ${isActiveLink("/services")}`}
           >
-            خدماتنا
+            Our Services
           </Link>
           <div
             className={styles.dropdown}
@@ -106,28 +106,28 @@ const Header = () => {
               href="/packages"
               className={`${styles.navLink} ${isScrolled ? "text-black" : "text-black"} ${isActiveLink("/packages")}`}
             >
-              الباقات
+              Packages
               <i className="ri-arrow-down-s-line ml-1" />
             </Link>
             <ul className={`${styles.dropdownMenu} ${dropdownOpen.packages ? "" : styles.dropdownMenuHidden}`}>
               <li>
                 <Link href="/websiteDesign" className={styles.dropdownMenuItem}>
-                  تصميم مواقع
+                  Website Design
                 </Link>
               </li>
               <li>
                 <Link href="/graphicDesign" className={styles.dropdownMenuItem}>
-                  تصميم جرافيك
+                  Graphic Design
                 </Link>
               </li>
               <li>
                 <Link href="/socialMediaManagement" className={styles.dropdownMenuItem}>
-                  إدارة صفحات السوشيال ميديا
+                  Social Media Management
                 </Link>
               </li>
               <li>
                 <Link href="/seoServices" className={styles.dropdownMenuItem}>
-                  خدمات السيو
+                  SEO Services
                 </Link>
               </li>
             </ul>
@@ -136,7 +136,7 @@ const Header = () => {
             href="/contact"
             className={`${styles.navLink} ${isScrolled ? "text-black" : "text-black"} ${isActiveLink("/contact")}`}
           >
-            اتصل بنا
+            Contact Us
           </Link>
 
            <Link
@@ -181,44 +181,44 @@ const Header = () => {
           <div className="container mx-auto px-4 bg-white shadow-lg rounded-lg mt-2">
             <div className="flex flex-col items-center py-4 space-y-4">
               <Link href="/" className="text-gray-800">
-                الصفحة الرئيسية
+                Home
               </Link>
               <Link href="/about" className="text-gray-800">
-                من نحن
+                About Us
               </Link>
               <Link href="/services" className="text-gray-800">
-                خدماتنا
+                Our Services
               </Link>
               <div className={styles.dropdown}>
                 <Link href="/packages" className="block w-full text-center text-gray-800">
-                  الباقات
+                  Packages
                   <i className="ri-arrow-down-s-line ml-1" />
                 </Link>
                 <ul className={`${styles.dropdownMenu} ${dropdownOpen.packages ? "" : styles.dropdownMenuHidden}`}>
                   <li>
                     <Link href="/websiteDesign" className={styles.dropdownMenuItem}>
-                      تصميم مواقع
+                      Website Design
                     </Link>
                   </li>
                   <li>
                     <Link href="/graphicDesign" className={styles.dropdownMenuItem}>
-                      تصميم جرافيك
+                      Graphic Design
                     </Link>
                   </li>
                   <li>
                     <Link href="/socialMediaManagement" className={styles.dropdownMenuItem}>
-                      إدارة صفحات السوشيال ميديا
+                      Social Media Management
                     </Link>
                   </li>
                   <li>
                     <Link href="/seoServices" className={styles.dropdownMenuItem}>
-                      خدمات السيو
+                      SEO Services
                     </Link>
                   </li>
                 </ul>
               </div>
               <Link href="/contact" className="text-gray-800">
-                اتصل بنا
+                Contact Us
               </Link>
             </div>
           </div>
@@ -229,6 +229,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-

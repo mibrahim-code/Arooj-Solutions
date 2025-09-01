@@ -7,39 +7,34 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 const TestimonialsArea = () => {
   return (
     <div className="testimonials-area pt-50 pb-100">
       <div className="container-fluid">
         <div className="section-title section-style-two">
-          <div className="section-bg-text">تعليق</div>
-          <span>الشهادات</span>
-          <h2>
-            ماذا يقول العملاء
-          </h2>
+          <div className="section-bg-text">TESTIMONIALS</div>
+          <span>Testimonials</span>
+          <h2>What Our Clients Say</h2>
         </div>
 
-        {/* Swiper for Testimonials */}
         <Swiper
-          spaceBetween={30}  // Space between slides
-          slidesPerView={1}   // Default to 1 slide on small screens
-          loop={true}         // Enable looping
-          autoplay={{ delay: 3000, disableOnInteraction: false }}  // Autoplay every 3 seconds
-          // pagination={{ clickable: true }}  // Enable pagination (dots)
-          // navigation         // Enable navigation arrows
-          breakpoints={{     // Set responsive breakpoints
+          spaceBetween={30}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          breakpoints={{
             768: {
-              slidesPerView: 2,  // 2 slides on screens >= 768px
+              slidesPerView: 2,
             },
             1024: {
-              slidesPerView: 3,  // 3 slides on screens >= 1024px
+              slidesPerView: 3,
             },
             1280: {
-              slidesPerView: 4,  // 4 slides on screens >= 1280px
+              slidesPerView: 4,
             },
           }}
         >
-          {/* Slide 1 */}
           <SwiperSlide>
             <div
               className="single-testimonials-card"
@@ -49,9 +44,7 @@ const TestimonialsArea = () => {
               data-aos-once="true"
             >
               <p>
-                تمنحنا تقاريرنا الجديدة إمكانية رؤية البيانات والوصول إليها
-                بطرق لم تكن لدينا من قبل. لقد تم تحرير بياناتنا وهي تساعدنا
-                الآن على اتخاذ قرارات حاسمة بشكل أسرع.
+                Our new reports give us visibility and access to data in ways we never had before. Our data has been liberated and is now helping us make critical decisions faster.
               </p>
               <div className="info-item-box">
                 <ExportedImage
@@ -61,7 +54,7 @@ const TestimonialsArea = () => {
                   width={60}
                   height={60}
                 />
-                <h4>المدير التنفيذي</h4>
+                <h4>CEO</h4>
                 <ul className="rating-list">
                   <li><i className="ri-star-fill" /></li>
                   <li><i className="ri-star-fill" /></li>
@@ -73,7 +66,6 @@ const TestimonialsArea = () => {
             </div>
           </SwiperSlide>
 
-          {/* Slide 2 */}
           <SwiperSlide>
             <div
               className="single-testimonials-card"
@@ -83,8 +75,7 @@ const TestimonialsArea = () => {
               data-aos-once="true"
             >
               <p>
-                لقد كان فريق سلسلا استثنائيًا منذ البداية. كشركة، بدأنا بفكرة
-                شبه واضحة عما أردناه وكيفية الحصول عليه. لقد جعلوها حقيقة.
+                The Arooj Solutions team has been exceptional from the start. As a company, we began with a semi-clear idea of what we wanted and how to get it. They made it a reality.
               </p>
               <div className="info-item-box">
                 <ExportedImage
@@ -94,7 +85,7 @@ const TestimonialsArea = () => {
                   width={60}
                   height={60}
                 />
-                <h4>المدير التنفيذي</h4>
+                <h4>CEO</h4>
                 <ul className="rating-list">
                   <li><i className="ri-star-fill" /></li>
                   <li><i className="ri-star-fill" /></li>
@@ -106,7 +97,6 @@ const TestimonialsArea = () => {
             </div>
           </SwiperSlide>
 
-          {/* Slide 3 */}
           <SwiperSlide>
             <div
               className="single-testimonials-card"
@@ -116,9 +106,7 @@ const TestimonialsArea = () => {
               data-aos-once="true"
             >
               <p>
-                كان فريق سلسلا محترفًا للغاية وقادرًا على التعامل مع مجموعة
-                واسعة من المهام. قام فريقهم البعيد أيضًا بعمل رائع على الرغم
-                من اختلاف المنطقة الزمنية والثقافية.
+                The Arooj Solutions team was highly professional and capable of handling a wide range of tasks. Their remote team also did an excellent job despite the time zone and cultural differences.
               </p>
               <div className="info-item-box">
                 <ExportedImage
@@ -128,7 +116,7 @@ const TestimonialsArea = () => {
                   width={60}
                   height={60}
                 />
-                <h4>المدير التنفيذي</h4>
+                <h4>CEO</h4>
                 <ul className="rating-list">
                   <li><i className="ri-star-fill" /></li>
                   <li><i className="ri-star-fill" /></li>
@@ -140,7 +128,6 @@ const TestimonialsArea = () => {
             </div>
           </SwiperSlide>
           
-          {/* Additional slides as needed */}
           <SwiperSlide>
             <div
               className="single-testimonials-card"
@@ -150,8 +137,7 @@ const TestimonialsArea = () => {
               data-aos-once="true"
             >
               <p>
-                لقد كان فريق سلسلا استثنائيًا منذ البداية. كشركة، بدأنا بفكرة
-                شبه واضحة عما أردناه وكيفية الحصول عليه. لقد جعلوها حقيقة.
+                The Arooj Solutions team has been exceptional from the start. As a company, we began with a semi-clear idea of what we wanted and how to get it. They made it a reality.
               </p>
               <div className="info-item-box">
                 <ExportedImage
@@ -161,7 +147,7 @@ const TestimonialsArea = () => {
                   width={60}
                   height={60}
                 />
-                <h4>المدير التنفيذي</h4>
+                <h4>CEO</h4>
                 <ul className="rating-list">
                   <li><i className="ri-star-fill" /></li>
                   <li><i className="ri-star-fill" /></li>
@@ -182,9 +168,7 @@ const TestimonialsArea = () => {
               data-aos-once="true"
             >
               <p>
-                تمنحنا تقاريرنا الجديدة إمكانية رؤية البيانات والوصول إليها
-                بطرق لم تكن لدينا من قبل. لقد تم تحرير بياناتنا وهي تساعدنا
-                الآن على اتخاذ قرارات حاسمة بشكل أسرع.
+                Our new reports give us visibility and access to data in ways we never had before. Our data has been liberated and is now helping us make critical decisions faster.
               </p>
               <div className="info-item-box">
                 <ExportedImage
@@ -194,8 +178,7 @@ const TestimonialsArea = () => {
                   width={60}
                   height={60}
                 />
-                <h4>المدير التنفيذي</h4>
-
+                <h4>CEO</h4>
                 <ul className="rating-list">
                   <li><i className="ri-star-fill" /></li>
                   <li><i className="ri-star-fill" /></li>
@@ -203,7 +186,6 @@ const TestimonialsArea = () => {
                   <li><i className="ri-star-fill" /></li>
                   <li><i className="ri-star-line" /></li>
                 </ul>
-
               </div>
             </div>
           </SwiperSlide>
@@ -211,7 +193,7 @@ const TestimonialsArea = () => {
       </div>
       <style jsx global>{`
         .swiper-button-next, .swiper-button-prev {
-          display: none !important; /* Hide the navigation arrows */
+          display: none !important;
         }
       `}</style>
     </div>

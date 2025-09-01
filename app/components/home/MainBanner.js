@@ -1,27 +1,21 @@
 "use client"
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 
-
 const MainBanner = () => {
   useEffect(() => {
-    // Initialize AOS
     AOS.init({
-      duration: 700,  // Set global duration for animations
-      once: true,     // Ensure animations happen only once
+      duration: 700,
+      once: true,
     });
-    
-    // Reinitialize AOS on page navigation
     AOS.refresh();
-  }, []);  // Run only on component mount
+  }, []);
 
   return (
-    <>
-      {/* Start Main Banner Area */}
-      <div className="main-banner-area">
+    <div className="main-banner-area">
       <div className="container-fluid">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-12">
@@ -32,9 +26,7 @@ const MainBanner = () => {
                 data-aos-duration={700}
                 style={{ fontSize: "54px" }}
               >
-                {/* أفضل شركة تقنية تتمحور حول البرمجة والتسويق */}
-                اختيارك الأفضل لحلول البرمجة والتسويق
-           
+                Comprehensive Cybersecurity & AI Solutions for Saudi Businesses
               </h1>
               <p
                 data-aos="fade-right"
@@ -42,16 +34,16 @@ const MainBanner = () => {
                 data-aos-duration="700"
                 style={{ fontSize: "24px" }}
               >
-                نقوم بتطوير وتنفيذ ودعم حلول البرمجيات الهامة للأعمال.
+                Protecting your digital assets and driving innovation in alignment with Saudi Vision 2030
               </p>
               <div
                 className="banner-btn"
                 data-aos="fade-right"
                 data-aos-delay={70}
-                data-aos-duration={700}
+                data-aos-duration="700"
               >
                 <Link href="/contact" className="default-btn">
-                  ابدأ الآن
+                  Get Started
                 </Link>
               </div>
             </div>
@@ -63,7 +55,7 @@ const MainBanner = () => {
                 width={633}
                 height={757}
                 src="images/bannerT.png"
-                alt="image"
+                alt="Cybersecurity and AI Solutions"
                 data-aos="fade-down"
                 data-aos-delay={70}
                 data-aos-duration={700}
@@ -73,7 +65,7 @@ const MainBanner = () => {
                   width={533}
                   height={533}
                   src="images/banner-circle.png"
-                  alt="image"
+                  alt="Circle Background"
                   data-aos="fade-down"
                   data-aos-delay={100}
                   data-aos-duration={1000}
@@ -88,7 +80,7 @@ const MainBanner = () => {
           width={410}
           height={410}
           src="images/banner-shape-1.png"
-          alt="image"
+          alt="Background Shape"
         />
       </div>
       <div className="banner-shape-2">
@@ -96,7 +88,7 @@ const MainBanner = () => {
           width={165}
           height={165}
           src="images/banner-shape-2.png"
-          alt="image"
+          alt="Background Shape"
         />
       </div>
       <div className="banner-dot-shape-1">
@@ -104,7 +96,7 @@ const MainBanner = () => {
           width={17}
           height={17}
           src="images/dot-1.png"
-          alt="image"
+          alt="Decoration Dot"
         />
       </div>
       <div className="banner-dot-shape-2">
@@ -112,7 +104,7 @@ const MainBanner = () => {
           width={13}
           height={13}
           src="images/dot-2.png"
-          alt="image"
+          alt="Decoration Dot"
         />
       </div>
       <div className="banner-dot-shape-3">
@@ -120,7 +112,7 @@ const MainBanner = () => {
           width={10}
           height={10}
           src="images/dot-3.png"
-          alt="image"
+          alt="Decoration Dot"
         />
       </div>
       <div className="banner-dot-shape-4">
@@ -128,7 +120,7 @@ const MainBanner = () => {
           width={4}
           height={4}
           src="images/dot-4.png"
-          alt="image"
+          alt="Decoration Dot"
         />
       </div>
       <div className="banner-dot-shape-5">
@@ -136,7 +128,7 @@ const MainBanner = () => {
           width={6}
           height={6}
           src="images/dot-5.png"
-          alt="image"
+          alt="Decoration Dot"
         />
       </div>
       <div className="lines">
@@ -145,8 +137,6 @@ const MainBanner = () => {
         <div className="line" />
       </div>
     </div>
-      {/* End Main Banner Area */}
-    </>
   );
 };
 

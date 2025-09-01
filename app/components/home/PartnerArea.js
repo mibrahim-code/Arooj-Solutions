@@ -2,8 +2,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
 import 'swiper/swiper-bundle.css';
-
 import ExportedImage from "next-image-export-optimizer";
+import Link from 'next/link';
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
@@ -13,20 +13,20 @@ const PartnerSwiper = () => {
       <div className="container">
         <Swiper
           spaceBetween={30}
-          slidesPerView={3} // Number of slides to show at a time
-          loop={true} // Enable looping
-          autoplay={{ delay: 3000, disableOnInteraction: false }} // Auto scroll with 3 seconds delay
-          pagination={{ clickable: true }} // Enable pagination
-          navigation={true} // Enable navigation arrows
+          slidesPerView={3}
+          loop={true}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          navigation={true}
           breakpoints={{
             640: {
-              slidesPerView: 1, // 1 slide for mobile devices
+              slidesPerView: 1,
             },
             768: {
-              slidesPerView: 2, // 2 slides for tablets
+              slidesPerView: 2,
             },
             1024: {
-              slidesPerView: 5, // 3 slides for larger devices
+              slidesPerView: 5,
             },
           }}
         >

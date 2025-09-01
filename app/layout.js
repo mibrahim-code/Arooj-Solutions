@@ -14,15 +14,15 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "سلسلا",
+  title: "Selsla",
 
   description:
-    " سلسلا لتقنية المعلومات والتسويق الالكتروني شريكك المثالي لنجاح أعمالك وازدهار علامتك التجارية عن طريق حلول مبتكرة وجودة عالية . تواصل الان . ",
+    "Selsla Information Technology and E-Marketing - Your ideal partner for business success and brand growth through innovative solutions and high quality. Contact us now.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" dir="rtl">
+    <html lang="en" dir="ltr">
       <head>
         {/* Required meta tags */}
         <meta charSet="utf-8" />
@@ -62,13 +62,12 @@ export default function RootLayout({ children }) {
             })(window, document, "clarity", "script", "rbkrglex6v");
           `}
         </Script>
-
-
       </head>
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+      
         {children}
 
         <Script data-cfasync="false" src="js/email-decode.min.js"></Script>

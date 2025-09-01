@@ -53,39 +53,39 @@ const Navbar2 = () => {
                 {/* Navbar Menu */}
                 <ul className={`${styles.customNavbarMenu} ${isOpen ? styles.customNavbarMenuOpen : ''}`}>
                     <li className={`${styles.customNavbarMenuLi} ${isActiveLink('/') ? styles.activeLink : ''}`}>
-                        <Link href="/" className={styles.customNavbarMenuLink}>الصفحة الرئيسية</Link>
+                        <Link href="/" className={styles.customNavbarMenuLink}>Home</Link>
                     </li>
                     <li className={`${styles.customNavbarMenuLi} ${isActiveLink('/about') ? styles.activeLink : ''}`}>
                         <Link href="/about" className={styles.customNavbarMenuLink}>
-                            من نحن
+                            About Us
                             <svg fill="#000000" height="20px" width="20px" viewBox="0 0 24 24">
                                 <path d="M7 10l5 5 5-5H7z" />
                             </svg>
                         </Link>
                         <ul className={styles.customDropdownMenu}>
-                            <li><Link href="/file" className={styles.customNavbarMenuLink1}>مَلَفّ</Link></li>
-                            <li><Link href="/ourClients" className={styles.customNavbarMenuLink1}>عملائنا</Link></li>
+                            <li><Link href="/file" className={styles.customNavbarMenuLink1}>Profile</Link></li>
+                            <li><Link href="/ourClients" className={styles.customNavbarMenuLink1}>Our Clients</Link></li>
                         </ul>
                     </li>
                     <li className={`${styles.customNavbarMenuLi} ${isActiveLink('/services') ? styles.activeLink : ''}`}>
-                        <Link href="/services" className={styles.customNavbarMenuLink}>خدماتنا</Link>
+                        <Link href="/services" className={styles.customNavbarMenuLink}>Our Services</Link>
                     </li>
                     <li className={`${styles.customNavbarMenuLi} ${isActiveLink('/packages') ? styles.activeLink : ''}`}>
                         <Link href="/packages" className={styles.customNavbarMenuLink}>
-                            الباقات
+                            Packages
                             <svg fill="#000000" height="20px" width="20px" viewBox="0 0 24 24">
                                 <path d="M7 10l5 5 5-5H7z" />
                             </svg>
                         </Link>
                         <ul className={styles.customDropdownMenu}>
-                            <li><Link href="websiteDesign" className={styles.customNavbarMenuLink1}>تصميم مواقع</Link></li>
-                            <li><Link href="/graphicDesign" className={styles.customNavbarMenuLink1}>تصميم جرافيك</Link></li>
-                            <li><Link href="/socialMediaManagement" className={styles.customNavbarMenuLink1}>إدارة صفحات السوشيال ميديا</Link></li>
-                            <li><Link href="/seoServices" className={styles.customNavbarMenuLink1}>خدمات السيو</Link></li>
+                            <li><Link href="websiteDesign" className={styles.customNavbarMenuLink1}>Website Design</Link></li>
+                            <li><Link href="/graphicDesign" className={styles.customNavbarMenuLink1}>Graphic Design</Link></li>
+                            <li><Link href="/socialMediaManagement" className={styles.customNavbarMenuLink1}>Social Media Management</Link></li>
+                            <li><Link href="/seoServices" className={styles.customNavbarMenuLink1}>SEO Services</Link></li>
                         </ul>
                     </li>
                     <li className={`${styles.customNavbarMenuLi} ${isActiveLink('/contact') ? styles.activeLink : ''}`}>
-                        <Link href="/contact" className={styles.customNavbarMenuLink}>اتصل بنا</Link>
+                        <Link href="/contact" className={styles.customNavbarMenuLink}>Contact Us</Link>
                     </li>
 
                      <li className={`${styles.customNavbarMenuLi} ${isActiveLink('/internship') ? styles.activeLink : ''}`}>

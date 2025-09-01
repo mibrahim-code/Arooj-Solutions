@@ -6,17 +6,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const OverviewArea = () => {
-  // Initialize AOS animation
   useEffect(() => {
     AOS.init({ once: true });
-    AOS.refresh(); // Refresh animation on component mount
+    AOS.refresh();
   }, []);
 
   return (
     <div className="overview-area pt-100 pb-75">
       <div className="container">
         <div className="row justify-content-center">
-          {/* Call Us */}
           <div className="col-lg-3 col-md-6">
             <div
               className="overview-card"
@@ -24,15 +22,14 @@ const OverviewArea = () => {
               data-aos-delay="50"
               data-aos-duration="500"
             >
-              <h3>اتصل بنا</h3>
+              <h3>Call Us</h3>
               <span>
-                <Link href="tel:9901234567">۰٥٤۹۹٦۹۱٥٦٦</Link>
+                <Link href="tel:96654699691566">+966 54 699 691 566</Link>
               </span>
-
               <div className="overview-shape">
                 <ExportedImage
                   src="/images/overview-shape.png"
-                  alt="Overview Shape"
+                  alt="Phone Icon"
                   width={40}
                   height={40}
                   unoptimized={true}
@@ -41,7 +38,6 @@ const OverviewArea = () => {
             </div>
           </div>
 
-          {/* Email Us */}
           <div className="col-lg-3 col-md-6">
             <div
               className="overview-card"
@@ -49,16 +45,14 @@ const OverviewArea = () => {
               data-aos-delay="60"
               data-aos-duration="600"
             >
-              {/* <h3>راسلنا عبر البريد الإلكتروني</h3> */}
-              <h3>بريد إلكتروني</h3>
+              <h3>Email Us</h3>
               <span>
-                <Link href="#">info@selsla.net</Link>
+                <Link href="mailto:info@aroojsolutions.com">info@aroojsolutions.com</Link>
               </span>
-
               <div className="overview-shape">
                 <ExportedImage
                   src="/images/overview-shape.png"
-                  alt="Overview Shape"
+                  alt="Email Icon"
                   width={40}
                   height={40}
                   unoptimized={true}
@@ -67,7 +61,6 @@ const OverviewArea = () => {
             </div>
           </div>
 
-          {/* Tech Support */}
           <div className="col-lg-3 col-md-6">
             <div
               className="overview-card"
@@ -75,13 +68,12 @@ const OverviewArea = () => {
               data-aos-delay="70"
               data-aos-duration="700"
             >
-              <h3>قم بزيارتنا</h3>
-              <span> <Link href= "https://maps.app.goo.gl/R3MN1mx1jc7jvxhc7"> Street Sayda 7036 District Al Suwaidi Riyadh </Link> </span>
-
+              <h3>Visit Us</h3>
+              <span>Riyadh, Saudi Arabia</span>
               <div className="overview-shape">
                 <ExportedImage
                   src="/images/overview-shape.png"
-                  alt="Overview Shape"
+                  alt="Location Icon"
                   width={40}
                   height={40}
                   unoptimized={true}
@@ -89,29 +81,6 @@ const OverviewArea = () => {
               </div>
             </div>
           </div>
-
-          {/* Visit Us */}
-          {/* <div className="col-lg-3 col-md-6">
-            <div
-              className="overview-card"
-              data-aos="fade-up"
-              data-aos-delay="80"
-              data-aos-duration="800"
-            >
-              <h3>زرنا</h3>
-              <span>٤١٣ شمال لاس فيغاس، نيفادا ٨٩٠٣٢</span>
- 
-              <div className="overview-shape">
-                <ExportedImage
-                  src="/images/overview-shape.png"
-                  alt="Overview Shape"
-                  width={40}
-                  height={40}
-                  unoptimized={true}
-                />
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
