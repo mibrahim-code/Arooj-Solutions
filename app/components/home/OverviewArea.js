@@ -15,6 +15,8 @@ const OverviewArea = () => {
     <div className="overview-area pt-100 pb-75">
       <div className="container">
         <div className="row justify-content-center">
+          
+          {/* Call Us */}
           <div className="col-lg-3 col-md-6">
             <div
               className="overview-card"
@@ -24,7 +26,7 @@ const OverviewArea = () => {
             >
               <h3>Call Us</h3>
               <span>
-                <Link href="#">+966 54 699 691 566</Link>
+                <Link href="tel:+96654699691566">+966 54 699 691 566</Link>
               </span>
               <div className="overview-shape">
                 <ExportedImage
@@ -38,6 +40,7 @@ const OverviewArea = () => {
             </div>
           </div>
 
+          {/* Email Us */}
           <div className="col-lg-3 col-md-6">
             <div
               className="overview-card"
@@ -47,11 +50,7 @@ const OverviewArea = () => {
             >
               <h3>Email Us</h3>
               <span>
-<<<<<<< HEAD
-                <Link href="#">info@arooj.sa</Link>
-=======
-                <Link href="mailto:info@aroojsolutions.com">info@arooj.sa</Link>
->>>>>>> 937a094cdcab12c4f49d5d15400611448040e07e
+                <Link href="mailto:info@arooj.sa">info@arooj.sa</Link>
               </span>
               <div className="overview-shape">
                 <ExportedImage
@@ -65,6 +64,7 @@ const OverviewArea = () => {
             </div>
           </div>
 
+          {/* Visit Us */}
           <div className="col-lg-3 col-md-6">
             <div
               className="overview-card"
@@ -85,6 +85,7 @@ const OverviewArea = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
