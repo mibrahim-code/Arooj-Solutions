@@ -14,10 +14,9 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Selsla",
-
+  title: "Arooj Solutions - Cybersecurity & AI Services in Saudi Arabia",
   description:
-    "Selsla Information Technology and E-Marketing - Your ideal partner for business success and brand growth through innovative solutions and high quality. Contact us now.",
+    "Arooj Solutions provides end-to-end cybersecurity and AI solutions in Saudi Arabia. Protect your digital assets, ensure NCA compliance, and leverage AI for business growth aligned with Vision 2030.",
 };
 
 export default function RootLayout({ children }) {
@@ -48,7 +47,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="css/dark.css" />
         <link rel="stylesheet" href="css/responsive.css" />
         <link rel="stylesheet" href="css/rtl.css" />
-        <link rel="icon" type="image/png" href="images/heartt.ico" />
+        <link rel="icon" type="image/png" href="images/favicon.ico" />
 
         <Script 
           id="microsoft-clarity"
@@ -89,7 +88,7 @@ export default function RootLayout({ children }) {
         <Script src="js/parallax.min.js"></Script>
         <Script src="js/jquery.ajaxchimp.min.js"></Script>
         <Script src="js/form-validator.min.js"></Script>
-        <Script src="js/contact-form-Script.js"></Script>
+        <Script src="js/contact-form-script.js"></Script>
         <Script src="js/aos.js"></Script>
         <Script src="js/wow.min.js"></Script>
         <Script src="js/main.js"></Script>
