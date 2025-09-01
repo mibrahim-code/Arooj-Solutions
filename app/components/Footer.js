@@ -25,7 +25,7 @@ const Footer = () => {
               data-aos-once="true"
             >
               <div className="widget-logo">
-                <Link href="/"><ExportedImage src="/images/logoff.webp" alt="Logo" width={150} height={50} /></Link>
+                <Link href="/"><ExportedImage src="/images/logooff.png" alt="Logo" width={150} height={50} /></Link>
               </div>
               <p className="font-sans text-gray-300 leading-relaxed">Transforming your ideas into digital reality - Your trusted partner for cybersecurity and AI solutions in Saudi Arabia.</p>
 

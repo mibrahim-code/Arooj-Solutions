@@ -26,7 +26,7 @@ const FooterEn = () => {
           data-aos-once="true"
         >
           <div className="widget-logo">
-            <Link href="/"><ExportedImage src="/images/logoff.webp" alt="Logo" width={150} height={50} /></Link>
+            <Link href="/"><ExportedImage src="/images/logoff.png" alt="Logo" width={150} height={50} /></Link>
           </div>
           <p>Transforming your ideas into digital reality - 
           Your trusted partner for app and web development.</p>
