@@ -23,6 +23,9 @@ const TestimonialsArea = () => {
           slidesPerView={1}
           loop={true}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
+          pagination={{ clickable: true }} // Added pagination configuration
+          navigation={true} // Enabled navigation
+          modules={[Autoplay, Pagination, Navigation]} // Added modules prop
           breakpoints={{
             768: {
               slidesPerView: 2,

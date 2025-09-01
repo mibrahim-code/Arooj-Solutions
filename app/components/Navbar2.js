@@ -56,40 +56,15 @@ const Navbar2 = () => {
                         <Link href="/" className={styles.customNavbarMenuLink}>Home</Link>
                     </li>
                     <li className={`${styles.customNavbarMenuLi} ${isActiveLink('/about') ? styles.activeLink : ''}`}>
-                        <Link href="/about" className={styles.customNavbarMenuLink}>
+                        <Link href="/" className={styles.customNavbarMenuLink}>
                             About Us
-                            <svg fill="#000000" height="20px" width="20px" viewBox="0 0 24 24">
-                                <path d="M7 10l5 5 5-5H7z" />
-                            </svg>
                         </Link>
-                        <ul className={styles.customDropdownMenu}>
-                            <li><Link href="/file" className={styles.customNavbarMenuLink1}>Profile</Link></li>
-                            <li><Link href="/ourClients" className={styles.customNavbarMenuLink1}>Our Clients</Link></li>
-                        </ul>
                     </li>
                     <li className={`${styles.customNavbarMenuLi} ${isActiveLink('/services') ? styles.activeLink : ''}`}>
-                        <Link href="/services" className={styles.customNavbarMenuLink}>Our Services</Link>
-                    </li>
-                    <li className={`${styles.customNavbarMenuLi} ${isActiveLink('/packages') ? styles.activeLink : ''}`}>
-                        <Link href="/packages" className={styles.customNavbarMenuLink}>
-                            Packages
-                            <svg fill="#000000" height="20px" width="20px" viewBox="0 0 24 24">
-                                <path d="M7 10l5 5 5-5H7z" />
-                            </svg>
-                        </Link>
-                        <ul className={styles.customDropdownMenu}>
-                            <li><Link href="websiteDesign" className={styles.customNavbarMenuLink1}>Website Design</Link></li>
-                            <li><Link href="/graphicDesign" className={styles.customNavbarMenuLink1}>Graphic Design</Link></li>
-                            <li><Link href="/socialMediaManagement" className={styles.customNavbarMenuLink1}>Social Media Management</Link></li>
-                            <li><Link href="/seoServices" className={styles.customNavbarMenuLink1}>SEO Services</Link></li>
-                        </ul>
+                        <Link href="/" className={styles.customNavbarMenuLink}>Our Services</Link>
                     </li>
                     <li className={`${styles.customNavbarMenuLi} ${isActiveLink('/contact') ? styles.activeLink : ''}`}>
-                        <Link href="/contact" className={styles.customNavbarMenuLink}>Contact Us</Link>
-                    </li>
-
-                     <li className={`${styles.customNavbarMenuLi} ${isActiveLink('/internship') ? styles.activeLink : ''}`}>
-                        <Link href="/internship" className={styles.customNavbarMenuLink}> Internship</Link>
+                        <Link href="/" className={styles.customNavbarMenuLink}>Contact Us</Link>
                     </li>
                 </ul>
             </div>

@@ -24,7 +24,7 @@ const OverviewArea = () => {
             >
               <h3>Call Us</h3>
               <span>
-                <Link href="tel:96654699691566">+966 54 699 691 566</Link>
+                <Link href="#">+966 54 699 691 566</Link>
               </span>
               <div className="overview-shape">
                 <ExportedImage
@@ -47,7 +47,7 @@ const OverviewArea = () => {
             >
               <h3>Email Us</h3>
               <span>
-                <Link href="mailto:info@aroojsolutions.com">info@aroojsolutions.com</Link>
+                <Link href="#">info@arooj.sa</Link>
               </span>
               <div className="overview-shape">
                 <ExportedImage
