@@ -54,7 +54,7 @@ const ServicesArea = () => {
                       <ExportedImage
                         width={500}
                         height={300}
-                        src="/images/services-cybersecurity.jpg"
+                        src="/images/services-1.jpg"
                         alt="Cybersecurity Services"
                         style={{width: '100%', height: 'auto'}}
                         className="img-fluid"
@@ -89,7 +89,7 @@ const ServicesArea = () => {
                       <ExportedImage
                         width={500}
                         height={300}
-                        src="/images/services-ai.jpg"
+                        src="/images/services-3.jpg"
                         alt="AI Services"
                         style={{width: '100%', height: 'auto'}}
                         className="img-fluid"
