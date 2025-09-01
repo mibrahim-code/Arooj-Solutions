@@ -1,0 +1,109 @@
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    transition: all 0.3s ease;
+  }
+  
+  .headerScrolled {
+    background-color: white;
+    color: black;
+    width: 100%;
+    margin-left: -5%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    font-size: 18px; 
+    transition: font-size 0.3s ease;
+  }
+  
+  
+  
+  .logo {
+    width: 130px;
+    height: 50px;
+  }
+  
+  .navLinks {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .navLink {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navLinkActive {
+    color: yellow;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+  }
+  
+  .dropdownMenuHidden {
+    display: none;
+  }
+  
+  .dropdownMenuItem {
+    padding: 8px 16px;
+    color: gray;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdownMenuItem:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .menuButton {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .mobileMenu {
+    display: none;
+  }
+  
+  .mobileMenuOpen {
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .navLinks {
+      display: none;
+    }
+  
+    .mobileMenu {
+      display: block;
+    }
+  }
+  
+
+
+
+
+      
