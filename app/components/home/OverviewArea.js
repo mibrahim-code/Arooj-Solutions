@@ -47,7 +47,7 @@ const OverviewArea = () => {
             >
               <h3>Email Us</h3>
               <span>
-                <Link href="mailto:info@aroojsolutions.com">info@aroojsolutions.com</Link>
+                <Link href="mailto:info@aroojsolutions.com">info@arooj.sa</Link>
               </span>
               <div className="overview-shape">
                 <ExportedImage
