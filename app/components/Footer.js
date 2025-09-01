@@ -31,17 +31,17 @@ const Footer = () => {
 
               <ul className="widget-social">
                 <li>
-                  <Link href="https://www.facebook.com/AroojSolutions" target="_blank" rel="noopener noreferrer">
+                  <Link href="#" target="_blank" rel="noopener noreferrer">
                     <i className="ri-facebook-fill"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.instagram.com/arooj_solutions" target="_blank" rel="noopener noreferrer">
+                  <Link href="#" target="_blank" rel="noopener noreferrer">
                     <i className="ri-instagram-line"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.linkedin.com/company/arooj-solutions" target="_blank" rel="noopener noreferrer">
+                  <Link href="#" target="_blank" rel="noopener noreferrer">
                     <i className="ri-linkedin-fill"></i>
                   </Link>
                 </li>
@@ -59,10 +59,10 @@ const Footer = () => {
             >
               <h3 className="font-sans font-semibold text-white mb-4">Company</h3>
               <ul className="quick-links">
-                <li><Link href="/" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Home</Link></li>
-                <li><Link href="/about" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">About Us</Link></li>
-                <li><Link href="/contact" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Contact</Link></li>
-                <li><Link href="/services" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Our Services</Link></li>
+                <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Home</Link></li>
+                <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">About Us</Link></li>
+                <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Contact</Link></li>
+                <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Our Services</Link></li>
               </ul>
             </div>
           </div>
@@ -77,10 +77,10 @@ const Footer = () => {
             >
               <h3 className="font-sans font-semibold text-white mb-4">Services</h3>
               <ul className="quick-links">
-                <li><Link href="/cybersecurity" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Cybersecurity</Link></li>
-                <li><Link href="/ai-solutions" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">AI Solutions</Link></li>
-                <li><Link href="/compliance" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Compliance</Link></li>
-                <li><Link href="/training" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Training</Link></li>
+                <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Cybersecurity</Link></li>
+                <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">AI Solutions</Link></li>
+                <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Compliance</Link></li>
+                <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Training</Link></li>
               </ul>
             </div>
           </div>
@@ -117,7 +117,7 @@ const Footer = () => {
                 style={{ verticalAlign: "middle", marginRight: "5px" }}
               />
               &nbsp;
-              <Link href="https://www.aroojsolutions.com/" target="_blank" rel="noopener noreferrer">
+              <Link href="#" target="_blank" rel="noopener noreferrer">
                 <b style={{ color: "#a561ac" }} className="font-sans">&nbsp; © Copyright </b>
               </Link>
             </b>

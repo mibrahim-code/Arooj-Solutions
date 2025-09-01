@@ -31,7 +31,7 @@ const Navbar2 = () => {
         }}>
             <div className={styles.customNavbarContent}>
                 {/* Logo */}
-                <Link href="/" className={styles.customNavbarLogo}>
+                <Link href="#" className={styles.customNavbarLogo}>
                     <ExportedImage
                         src={isScrolled ? '/images/logoG.png' : '/images/logoG.png'}
                         width={132}

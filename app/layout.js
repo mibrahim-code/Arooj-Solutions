@@ -29,6 +29,10 @@ export default function RootLayout({ children }) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+
+        {/* Favicon */}
+        <link rel="icon" type="image/x-icon" href="/images/as.ico" />
+
         {/* Links of CSS files */}
         <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
         <link rel="stylesheet" href="css/aos.css" />
@@ -47,12 +51,8 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="css/dark.css" />
         <link rel="stylesheet" href="css/responsive.css" />
         <link rel="stylesheet" href="css/rtl.css" />
-        <link rel="icon" type="image/png" href="images/favicon.ico" />
 
-        <Script 
-          id="microsoft-clarity"
-          strategy="afterInteractive"
-        >
+        <Script id="microsoft-clarity" strategy="afterInteractive">
           {`
             (function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -66,7 +66,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      
         {children}
 
         <Script data-cfasync="false" src="js/email-decode.min.js"></Script>
