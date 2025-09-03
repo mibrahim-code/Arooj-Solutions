@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -18,21 +18,21 @@ const MainBanner = () => {
     <div className="main-banner-area">
       <div className="container-fluid">
         <div className="row align-items-center">
-          <div className="col-lg-6 col-md-12">
+          <div className="col-lg-6 col-md-12 col-sm-12">
             <div className="main-banner-content">
               <h1
                 data-aos="fade-right"
                 data-aos-delay={70}
                 data-aos-duration={700}
-                style={{ fontSize: "54px" }}
+                style={{ fontSize: "clamp(32px, 5vw, 54px)" }}
               >
                 Comprehensive Cybersecurity & AI Solutions for Saudi Businesses
               </h1>
               <p
                 data-aos="fade-right"
                 data-aos-delay="70"
-                data-aos-duration="700"
-                style={{ fontSize: "24px" }}
+                data-aos-duration={700}
+                style={{ fontSize: "clamp(18px, 2.5vw, 24px)" }}
               >
                 Protecting your digital assets and driving innovation in alignment with Saudi Vision 2030
               </p>
@@ -40,16 +40,16 @@ const MainBanner = () => {
                 className="banner-btn"
                 data-aos="fade-right"
                 data-aos-delay={70}
-                data-aos-duration="700"
+                data-aos-duration={700}
               >
-                <Link href="/contact" className="default-btn">
+                <Link href="#" className="default-btn">
                   Get Started
                 </Link>
               </div>
             </div>
           </div>
 
-          <div className="col-lg-6 col-md-12">
+          <div className="col-lg-6 col-md-12 col-sm-12">
             <div className="main-banner-image">
               <ExportedImage
                 width={633}
@@ -59,6 +59,7 @@ const MainBanner = () => {
                 data-aos="fade-down"
                 data-aos-delay={70}
                 data-aos-duration={700}
+                style={{ width: '100%', height: 'auto', maxWidth: '633px' }}
               />
               <div className="banner-circle">
                 <ExportedImage
@@ -69,6 +70,7 @@ const MainBanner = () => {
                   data-aos="fade-down"
                   data-aos-delay={100}
                   data-aos-duration={1000}
+                  style={{ width: '100%', height: 'auto', maxWidth: '533px' }}
                 />
               </div>
             </div>
@@ -81,6 +83,7 @@ const MainBanner = () => {
           height={410}
           src="images/banner-shape-1.png"
           alt="Background Shape"
+          style={{ width: '100%', height: 'auto', maxWidth: '410px' }}
         />
       </div>
       <div className="banner-shape-2">
@@ -89,6 +92,7 @@ const MainBanner = () => {
           height={165}
           src="images/banner-shape-2.png"
           alt="Background Shape"
+          style={{ width: '100%', height: 'auto', maxWidth: '165px' }}
         />
       </div>
       <div className="banner-dot-shape-1">

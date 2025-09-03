@@ -17,9 +17,10 @@ const AboutArea = () => {
   return (
     <div className="about-area pb-75">
       <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-6 col-md-12">
-            <div className="about-wrap-image" data-tilt="">
+        <div className="row align-items-center text-center text-lg-start">
+          {/* Image Section */}
+          <div className="col-lg-6 col-md-12 col-sm-12 mb-4 mb-lg-0">
+            <div className="about-wrap-image mx-auto" data-tilt="">
               <ExportedImage
                 src="/images/aboutT1.png"
                 alt="About Us"
@@ -34,7 +35,9 @@ const AboutArea = () => {
               />
             </div>
           </div>
-          <div className="col-lg-6 col-md-12">
+
+          {/* Content Section */}
+          <div className="col-lg-6 col-md-12 col-sm-12">
             <div
               className="about-wrap-content"
               data-aos="fade-up"
@@ -44,19 +47,26 @@ const AboutArea = () => {
             >
               <div className="about-bg-text">About Us</div>
               <span>Who We Are</span>
-              <h3>Your Trusted Partner for Comprehensive Cybersecurity & AI Solutions</h3>
+              <h3>
+                Your Trusted Partner for Comprehensive Cybersecurity & AI
+                Solutions
+              </h3>
               <p>
-                Arooj Solutions provides end-to-end cybersecurity and artificial intelligence services to protect your digital assets, ensure compliance with Saudi regulations, and drive innovation in line with Vision 2030.
+                Arooj Solutions provides end-to-end cybersecurity and artificial
+                intelligence services to protect your digital assets, ensure
+                compliance with Saudi regulations, and drive innovation in line
+                with Vision 2030.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="about-inner-box">
-          <div className="row justify-content-center">
-            <div className="col-lg-4 col-md-6">
+        {/* Inner Cards Section */}
+        <div className="about-inner-box mt-5">
+          <div className="row justify-content-center text-center">
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
               <div
-                className="single-about-card"
+                className="single-about-card h-100"
                 data-aos="fade-up"
                 data-aos-delay="80"
                 data-aos-duration="800"
@@ -64,19 +74,21 @@ const AboutArea = () => {
               >
                 <h3>Our Vision</h3>
                 <p>
-                  To be Saudi Arabia's leading cybersecurity and AI solutions provider, delivering innovative technologies that protect businesses and drive digital transformation.
+                  To be Saudi Arabia's leading cybersecurity and AI solutions
+                  provider, delivering innovative technologies that protect
+                  businesses and drive digital transformation.
                 </p>
-                <div className="about-btn">
-                  <Link href="/about" className="default-btn">
+                <div className="about-btn mt-3">
+                  <Link href="#" className="default-btn">
                     Learn More About Us
                   </Link>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
               <div
-                className="single-about-card"
+                className="single-about-card h-100"
                 data-aos="fade-down"
                 data-aos-delay="70"
                 data-aos-duration="700"
@@ -84,20 +96,22 @@ const AboutArea = () => {
               >
                 <h3>Our Mission</h3>
                 <p>
-                  To empower Saudi businesses with comprehensive cybersecurity protection and AI-driven solutions that ensure compliance, enhance efficiency, and future-proof operations.
+                  To empower Saudi businesses with comprehensive cybersecurity
+                  protection and AI-driven solutions that ensure compliance,
+                  enhance efficiency, and future-proof operations.
                 </p>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div
-                className="single-about-card"
+                className="single-about-card h-100"
                 data-aos="fade-up"
                 data-aos-delay="80"
                 data-aos-duration="800"
                 data-aos-once="true"
               >
-                <div className="card-image" data-tilt="">
+                <div className="card-image mx-auto" data-tilt="">
                   <ExportedImage
                     src="/images/aboutT2.png"
                     alt="About Image"
@@ -113,7 +127,8 @@ const AboutArea = () => {
         </div>
       </div>
 
-      <div className="about-circle-shape">
+      {/* Circle Shape */}
+      <div className="about-circle-shape text-center text-lg-start">
         <ExportedImage
           src="/images/about-circle.png"
           alt="Circle Shape"

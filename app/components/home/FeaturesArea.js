@@ -20,7 +20,7 @@ const FeaturesArea = () => {
         <div className="features-inner-box">
           <div className="row justify-content-center">
             <div
-              className="col-lg-4 col-md-6"
+              className="col-lg-4 col-md-6 col-sm-6 col-12"
               data-aos="fade-down"
               data-aos-delay="100"
               data-aos-duration="1000"
@@ -58,7 +58,7 @@ const FeaturesArea = () => {
             </div>
 
             <div
-              className="col-lg-4 col-md-6"
+              className="col-lg-4 col-md-6 col-sm-6 col-12"
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-duration="1000"
@@ -96,7 +96,7 @@ const FeaturesArea = () => {
             </div>
 
             <div
-              className="col-lg-4 col-md-6"
+              className="col-lg-4 col-md-6 col-sm-6 col-12"
               data-aos="fade-down"
               data-aos-delay="100"
               data-aos-duration="1000"

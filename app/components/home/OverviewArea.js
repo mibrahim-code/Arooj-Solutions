@@ -17,7 +17,7 @@ const OverviewArea = () => {
         <div className="row justify-content-center">
           
           {/* Call Us */}
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
             <div
               className="overview-card"
               data-aos="fade-up"
@@ -41,7 +41,7 @@ const OverviewArea = () => {
           </div>
 
           {/* Email Us */}
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
             <div
               className="overview-card"
               data-aos="fade-up"
@@ -65,7 +65,7 @@ const OverviewArea = () => {
           </div>
 
           {/* Visit Us */}
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12">
             <div
               className="overview-card"
               data-aos="fade-up"
