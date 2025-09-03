@@ -61,10 +61,10 @@ const TalkArea = () => {
   return (
     <div className="talk-area ptb-100 overflow-hidden">
       <div className="container overflow-hidden">
-        <div className="row align-items-center">
+        <div className="row align-items-center text-center text-lg-start">
           {/* Left image side */}
-          <div className="col-lg-6 col-md-12 col-sm-12">
-            <div className="talk-image relative overflow-hidden">
+          <div className="col-lg-6 col-md-12 col-sm-12 mb-4 mb-lg-0 flex justify-center">
+            <div className="talk-image relative overflow-hidden inline-block">
               <ExportedImage
                 src="/images/talkT.png"
                 alt="Talk Image"
@@ -97,7 +97,7 @@ const TalkArea = () => {
           {/* Right content side */}
           <div className="col-lg-6 col-md-12 col-sm-12">
             <div
-              className="talk-content relative z-10"
+              className="talk-content relative z-10 text-center text-lg-start"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
@@ -115,81 +115,78 @@ const TalkArea = () => {
               </p>
 
               {/* Contact Form */}
-              <form id="contactFormTwo" onSubmit={handleSubmit}>
+              <form
+                id="contactFormTwo"
+                onSubmit={handleSubmit}
+                className="text-center text-lg-start"
+              >
                 <div className="row">
-                  <div className="col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        name="name"
-                        className="form-control"
-                        required
-                        value={form.name}
-                        onChange={handleInputChange}
-                        placeholder="Your Name"
-                      />
-                    </div>
+                  <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <input
+                      type="text"
+                      name="name"
+                      className="form-control text-center text-lg-start"
+                      required
+                      value={form.name}
+                      onChange={handleInputChange}
+                      placeholder="Your Name"
+                    />
                   </div>
 
-                  <div className="col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div className="form-group">
-                      <input
-                        type="email"
-                        name="email"
-                        className="form-control"
-                        required
-                        value={form.email}
-                        onChange={handleInputChange}
-                        placeholder="Your Email Address"
-                      />
-                    </div>
+                  <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <input
+                      type="email"
+                      name="email"
+                      className="form-control text-center text-lg-start"
+                      required
+                      value={form.email}
+                      onChange={handleInputChange}
+                      placeholder="Your Email Address"
+                    />
                   </div>
 
-                  <div className="col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        name="phone"
-                        className="form-control"
-                        required
-                        value={form.phone}
-                        onChange={handleInputChange}
-                        placeholder="Your Phone Number"
-                      />
-                    </div>
+                  <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <input
+                      type="text"
+                      name="phone"
+                      className="form-control text-center text-lg-start"
+                      required
+                      value={form.phone}
+                      onChange={handleInputChange}
+                      placeholder="Your Phone Number"
+                    />
                   </div>
 
-                  <div className="col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        name="subject"
-                        className="form-control"
-                        required
-                        value={form.subject}
-                        onChange={handleInputChange}
-                        placeholder="Subject"
-                      />
-                    </div>
+                  <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <input
+                      type="text"
+                      name="subject"
+                      className="form-control text-center text-lg-start"
+                      required
+                      value={form.subject}
+                      onChange={handleInputChange}
+                      placeholder="Subject"
+                    />
                   </div>
 
-                  <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div className="form-group">
-                      <textarea
-                        name="message"
-                        className="form-control"
-                        cols="30"
-                        rows="6"
-                        required
-                        value={form.message}
-                        onChange={handleInputChange}
-                        placeholder="Write your message..."
-                      ></textarea>
-                    </div>
+                  <div className="col-lg-12 col-md-12 col-sm-12 mb-3">
+                    <textarea
+                      name="message"
+                      className="form-control text-center text-lg-start"
+                      cols="30"
+                      rows="6"
+                      required
+                      value={form.message}
+                      onChange={handleInputChange}
+                      placeholder="Write your message..."
+                    ></textarea>
                   </div>
 
-                  <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <button type="submit" className="default-btn">
+                  <div className="col-lg-12 col-md-12 col-sm-12">
+                    <button
+                      type="submit"
+                      className="default-btn mx-auto lg:mx-0"
+                    >
                       Send Message <span></span>
                     </button>
                     <div

@@ -18,16 +18,17 @@ const FeaturesArea = () => {
     <div className="features-area pb-75">
       <div className="container">
         <div className="features-inner-box">
-          <div className="row justify-content-center">
+          <div className="row justify-content-center text-center">
+            {/* Feature 1 */}
             <div
-              className="col-lg-4 col-md-6 col-sm-6 col-12"
+              className="col-lg-4 col-md-6 col-sm-12 mb-4"
               data-aos="fade-down"
               data-aos-delay="100"
               data-aos-duration="1000"
               data-aos-once="true"
             >
-              <div className="single-features-card" datatilt="">
-                <div className="features-image" datatilt="">
+              <div className="single-features-card h-100">
+                <div className="features-image mx-auto">
                   <Link href="#">
                     <ExportedImage
                       src="/images/features-1.png"
@@ -38,15 +39,16 @@ const FeaturesArea = () => {
                     />
                   </Link>
                 </div>
-                <div className="content">
+                <div className="content mt-3">
                   <h3>
                     <Link href="#">Cybersecurity Training</Link>
                   </h3>
                   <p>
-                    Customized training programs, phishing simulations, and role-based security awareness for your workforce.
+                    Customized training programs, phishing simulations, and
+                    role-based security awareness for your workforce.
                   </p>
                 </div>
-                <div className="hover-content">
+                <div className="hover-content mt-2">
                   <h3>
                     <Link href="#">Cybersecurity Training</Link>
                   </h3>
@@ -57,15 +59,16 @@ const FeaturesArea = () => {
               </div>
             </div>
 
+            {/* Feature 2 */}
             <div
-              className="col-lg-4 col-md-6 col-sm-6 col-12"
+              className="col-lg-4 col-md-6 col-sm-12 mb-4"
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-duration="1000"
               data-aos-once="true"
             >
-              <div className="single-features-card" datatilt="">
-                <div className="features-image" datatilt="">
+              <div className="single-features-card h-100">
+                <div className="features-image mx-auto">
                   <Link href="#">
                     <ExportedImage
                       src="/images/features-2.png"
@@ -76,15 +79,16 @@ const FeaturesArea = () => {
                     />
                   </Link>
                 </div>
-                <div className="content">
+                <div className="content mt-3">
                   <h3>
                     <Link href="#">Penetration Testing</Link>
                   </h3>
                   <p>
-                    Comprehensive vulnerability assessments and simulated attacks to identify and remediate security weaknesses.
+                    Comprehensive vulnerability assessments and simulated
+                    attacks to identify and remediate security weaknesses.
                   </p>
                 </div>
-                <div className="hover-content">
+                <div className="hover-content mt-2">
                   <h3>
                     <Link href="#">Penetration Testing</Link>
                   </h3>
@@ -95,15 +99,16 @@ const FeaturesArea = () => {
               </div>
             </div>
 
+            {/* Feature 3 */}
             <div
-              className="col-lg-4 col-md-6 col-sm-6 col-12"
+              className="col-lg-4 col-md-6 col-sm-12 mb-4"
               data-aos="fade-down"
               data-aos-delay="100"
               data-aos-duration="1000"
               data-aos-once="true"
             >
-              <div className="single-features-card" datatilt="">
-                <div className="features-image" datatilt="">
+              <div className="single-features-card h-100">
+                <div className="features-image mx-auto">
                   <Link href="#">
                     <ExportedImage
                       src="/images/features-3.png"
@@ -114,15 +119,16 @@ const FeaturesArea = () => {
                     />
                   </Link>
                 </div>
-                <div className="content">
+                <div className="content mt-3">
                   <h3>
                     <Link href="#">AI-Powered Security</Link>
                   </h3>
                   <p>
-                    Advanced threat detection, automated incident response, and behavioral analytics using artificial intelligence.
+                    Advanced threat detection, automated incident response, and
+                    behavioral analytics using artificial intelligence.
                   </p>
                 </div>
-                <div className="hover-content">
+                <div className="hover-content mt-2">
                   <h3>
                     <Link href="#">AI-Powered Security</Link>
                   </h3>
