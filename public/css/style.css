@@ -88,8 +88,10 @@ Default CSS
   --main-font-family: "YourFont";
   --heading-font-family: "BoldFont";
   --monoton-font-family: "YourFont";
-  --main-color: #FEB302;
-  --optional-color: #3E019A;
+  --main-color: #3ba2da;
+  /* --main-color: #FEB302; */
+  --optional-color: #9564ab;
+  /* --optional-color: #3E019A; */
   --white-color: #ffffff;
   --black-color: #14042C;
   --paragraph-color: #646464;
@@ -260,7 +262,7 @@ Section Title CSS
   position: relative;
 }
 .section-title h2 b {
-  background: radial-gradient(circle, #a66bff, #c666ef, #dd62df, #ee61cf, #fb64bf);
+  background: radial-gradient(circle, #a66bff, #c666ef, #dd62df, #ee61cf, #9564AB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
