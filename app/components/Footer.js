@@ -131,9 +131,11 @@ const Footer = () => {
       <div className="copyright-area">
         <div className="container">
           <div className="copyright-area-content text-center">
+            {/* Line 1 */}
             <p className="font-sans text-gray-300">
               Copyright © Arooj Solutions © 2024
             </p>
+            {/* Line 2 */}
             <p className="font-sans text-gray-300 flex items-center justify-center gap-2 mt-2">
               Developed By
               <ExportedImage
