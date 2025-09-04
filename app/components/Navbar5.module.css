@@ -1,17 +1,16 @@
-/* Navbar5.module.css */
 .customNavbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: transparent; /* not scrolled => transparent so white links are visible */
-    color: white;
-    transition: background-color 0.3s ease, color 0.2s ease;
+    background-color: transparent;
+    color: black;
+    transition: background-color 0.3s ease;
     z-index: 1000;
     padding: 5px 10px;
 }
 
 .customNavbarScrolled {
-    background-color: white; /* on scroll => white background */
+    background-color: white;
     color: black;
 }
 
@@ -39,22 +38,14 @@
     z-index: 1200; /* Make sure it's above menu */
     margin-left: auto;   /* push it properly inside */
     padding: 5px;        /* adds spacing so it's not glued to edge */
-    color: white;        /* icon color when NOT scrolled */
-    transition: color 0.2s ease;
-}
-
-/* when scrolled, icon should be black */
-.customNavbarScrolled .customNavbarToggle {
-    color: black;
 }
 
 .customNavbarToggle svg {
     width: 28px;
     height: 28px;
-    display: block;
+    stroke: black;
 }
 
-/* Menu layout */
 .customNavbarMenu {
     display: flex;
     list-style: none;
@@ -69,28 +60,18 @@
     position: relative;
 }
 
-/* Default (not scrolled): links white */
 .customNavbarMenuLink,
 .customNavbarMenuLink1 {
-    color: white;
+    color: black;
     text-decoration: none;
     display: flex;
     align-items: center;
-    transition: color 0.15s ease;
 }
 
-/* Hover effect: keep your yellow hover as requested */
-.customNavbarMenuLink:hover,
-.customNavbarMenuLink1:hover {
-    color: #ffd700; /* yellow hover */
-}
-
-/* Dropdown arrow spacing */
 .customDropdownArrow {
     margin-left: 8px;
 }
 
-/* Dropdown styles (kept as original) */
 .customDropdownMenu {
     display: none;
     position: absolute;
@@ -105,7 +86,6 @@
     z-index: 1100;
 }
 
-/* show dropdown on hover */
 .customNavbarMenuLi:hover .customDropdownMenu {
     display: block;
 }
@@ -113,10 +93,8 @@
 .customDropdownMenu li {
     margin: 10px 0;
     padding: 5px 10px;
-    color: black; /* dropdown items remain black on their white bg */
 }
 
-/* Search area (if present) */
 .customNavbarSearch {
     display: flex;
     align-items: center;
@@ -131,17 +109,8 @@
 .customSearchButton svg {
     width: 24px;
     height: 24px;
-    fill: currentColor;
-    color: white; /* not scrolled => white */
-    transition: color 0.2s ease;
 }
 
-/* when scrolled, make search icon black */
-.customNavbarScrolled .customSearchButton svg {
-    color: black;
-}
-
-/* Active link styling (left as you had it) */
 .activeLink {
     position: relative;
     padding-bottom: 5px;
@@ -172,53 +141,44 @@
     width: 100%;
 }
 
-/* -------------------------
-   SCROLL STATE (links black)
-   ------------------------- */
+/* SCROLL STYLES */
 .customNavbarScrolled {
-    /* background-color already set above */
+    background-color: white;
     color: black;
 }
 
-/* links should be black when scrolled */
 .customNavbarScrolled .customNavbarMenuLink,
 .customNavbarScrolled .customNavbarMenuLink1 {
     color: black;
 }
 
-/* keep hover yellow when scrolled too */
-.customNavbarScrolled .customNavbarMenuLink:hover,
-.customNavbarScrolled .customNavbarMenuLink1:hover {
-    color: #ffd700;
+.customNavbarScrolled .customNavbarToggle svg {
+    stroke: black;
 }
 
-/* -------------------------
-   MOBILE STYLES
-   ------------------------- */
+.customNavbarScrolled .customSearchButton svg {
+    fill: black;
+}
+
+/* MOBILE STYLES */
 @media (max-width: 768px) {
-    /* keep navbar transparent when NOT scrolled on mobile too */
     .customNavbar {
-        background-color: transparent;
+        background-color: white;
     }
 
-    /* show toggler on mobile */
-    .customNavbarToggle {
-        display: block;
-        order: 2;
-        margin-left: auto;   /* keeps it neatly inside */
-        margin-right: 10px;  /* prevents it from touching screen edge */
+    .customNavbarMenuLink {
+        color: black;
     }
 
-    .customNavbarLogo {
-        order: 1;
-    }
-
-    /* hide search on mobile (as you had) */
     .customNavbarSearch {
-        display: none;
+        display: none; /* Hide search on mobile */
     }
 
-    /* mobile menu (dropdown panel) */
+    .customNavbarContent {
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .customNavbarMenu {
         display: none;
         flex-direction: column;
@@ -226,14 +186,25 @@
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: white; /* panel background = white for readability */
+        background-color: white;
         padding: 15px 0;
         z-index: 1100;
     }
 
-    /* when opened */
+    /* This will make the menu appear when opened */
     .customNavbarMenu.customNavbarMenuOpen {
         display: flex;
+    }
+
+    .customNavbarToggle {
+        display: block;
+        order: 2;
+        margin-left: auto;   /* ✅ keeps it neatly inside */
+        margin-right: 10px;  /* ✅ prevents it from touching screen edge */
+    }
+
+    .customNavbarLogo {
+        order: 1;
     }
 
     .customNavbarMenuLi {
@@ -242,19 +213,6 @@
         text-align: center;
     }
 
-    /* Top-bar links (when mobile nav closed) remain white (so they sit on transparent bg) */
-    .customNavbarMenuLink,
-    .customNavbarMenuLink1 {
-        color: white;
-    }
-
-    /* BUT when the mobile panel is open (white background), make those links black for readability */
-    .customNavbarMenu.customNavbarMenuOpen .customNavbarMenuLink,
-    .customNavbarMenu.customNavbarMenuOpen .customNavbarMenuLink1 {
-        color: black;
-    }
-
-    /* dropdown submenu inside mobile panel should match panel */
     .customDropdownMenu {
         display: none;
         position: static;
@@ -272,6 +230,74 @@
     .customDropdownMenu li {
         padding: 10px 20px;
         text-align: center;
-        color: black;
     }
+}
+       /* Floating Icons */
+.floatingIcons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.floatingIcon {
+  display: flex;
+  align-items: center;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+.floatingIcon:first-child {
+  background-color: #007bff;
+  animation-delay: 0.5s;
+}
+
+.floatingIcon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.floatingIcon svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.floatingIcon span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Responsive styles for floating icons */
+@media (max-width: 768px) {
+  .floatingIcons {
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .floatingIcon {
+    padding: 10px 12px;
+  }
+  
+  .floatingIcon span {
+    font-size: 12px;
+  }
 }
