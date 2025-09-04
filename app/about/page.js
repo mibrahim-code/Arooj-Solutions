@@ -14,11 +14,12 @@ import TestimonialsArea from '../components/about/TestimonialsArea'
 import TalkArea from '../components/home/TalkArea'
 // import Navbar3 from '../components/Navbar3'
 import Navbar2 from '../components/Navbar2'
+import Navbar5 from '../components/Navbar5'
 
 const page = () => {
   return (
     <div>
-      <Navbar2 />
+      <Navbar5 />
       {/* <Navbar /> */}
       <AboutBanner />
       <AboutArea />

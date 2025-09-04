@@ -8,11 +8,12 @@ import ContactBanner from '../components/contact/ContactBanner'
 import OverviewArea from '../components/home/OverviewArea'
 import TalkArea from '../components/home/TalkArea'
 import Navbar2 from '../components/Navbar2'
+import Navbar5 from '../components/Navbar5'
 
 const page = () => {
   return (
     <div>
-      <Navbar2 />
+      <Navbar5 />
       {/* <Navbar /> */}
 
     <ContactBanner />
