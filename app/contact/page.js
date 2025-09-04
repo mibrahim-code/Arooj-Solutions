@@ -7,12 +7,12 @@ import GoTopButton from '../components/GoTopButton'
 import ContactBanner from '../components/contact/ContactBanner'
 import OverviewArea from '../components/home/OverviewArea'
 import TalkArea from '../components/home/TalkArea'
-import Navbar3 from '../components/Navbar3'
+import Navbar2 from '../components/Navbar2'
 
 const page = () => {
   return (
     <div>
-      <Navbar3 />
+      <Navbar2 />
       {/* <Navbar /> */}
 
     <ContactBanner />

@@ -8,13 +8,13 @@ import ChooseArea from "../components/home/ChooseArea";
 import TalkArea from "../components/home/TalkArea";
 import OverviewArea from "../components/home/OverviewArea";
 import ServicesBanner from "../components/services/ServicesBanner";
-import Navbar3 from "../components/Navbar3";
+import Navbar2 from "../components/Navbar2";
 
 const page = () => {
   return (
     <div>
 
-      <Navbar3 />
+      <Navbar2 />
       {/* <Navbar /> */}
       <ServicesBanner />
       <ChooseArea />

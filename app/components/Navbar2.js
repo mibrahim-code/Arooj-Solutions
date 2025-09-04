@@ -76,7 +76,7 @@ const Navbar2 = () => {
         >
           <li className={styles.customNavbarMenuLi}>
             <Link
-              href="#"
+              href="/"
               className={styles.customNavbarMenuLink}
               onClick={handleLinkClick}
             >
@@ -85,7 +85,7 @@ const Navbar2 = () => {
           </li>
           <li className={styles.customNavbarMenuLi}>
             <Link
-              href="#"
+              href="/about"
               className={styles.customNavbarMenuLink}
               onClick={handleLinkClick}
             >
@@ -94,7 +94,7 @@ const Navbar2 = () => {
           </li>
           <li className={styles.customNavbarMenuLi}>
             <Link
-              href="#"
+              href="/services"
               className={styles.customNavbarMenuLink}
               onClick={handleLinkClick}
             >
@@ -103,7 +103,7 @@ const Navbar2 = () => {
           </li>
           <li className={styles.customNavbarMenuLi}>
             <Link
-              href="#"
+              href="/contact"
               className={styles.customNavbarMenuLink}
               onClick={handleLinkClick}
             >

@@ -27,7 +27,7 @@ const TalkArea = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://backtesting.selsla.net/api/contact",
+        "https://backend.arooj.sa/api/contact",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
