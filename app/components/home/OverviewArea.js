@@ -26,7 +26,7 @@ const OverviewArea = () => {
             >
               <h3>Call Us</h3>
               <span>
-                <Link href="tel:+96654699691566">+966 54 699 691 566</Link>
+                <Link href="tel:+966501881230">+966 50 188 1230</Link>
               </span>
               <div className="overview-shape">
                 <ExportedImage

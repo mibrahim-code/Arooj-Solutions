@@ -42,7 +42,7 @@ const MainBanner = () => {
                 data-aos-delay={70}
                 data-aos-duration={700}
               >
-                <Link href="#" className="default-btn">
+                <Link href="/contact" className="default-btn">
                   Get Started
                 </Link>
               </div>
