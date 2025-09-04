@@ -43,7 +43,7 @@ const Navbar5 = () => {
             onClick={handleLinkClick}
           >
             <ExportedImage
-              src="/images/asFooterLogo.png"
+              src={isScrolled ? "/images/logoG.png" : "/images/asFooterLogo.png"}
               width={132}
               height={50}
               alt="logo"
