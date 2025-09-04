@@ -10,6 +10,8 @@ import OverviewArea from "../components/home/OverviewArea";
 import ServicesBanner from "../components/services/ServicesBanner";
 import Navbar2 from "../components/Navbar2";
 import Navbar5 from "../components/Navbar5";
+import CybersecurityServices from "../components/home/CybersecurityServices";
+import AIServices from "../components/home/AIServices";
 
 const page = () => {
   return (
@@ -19,6 +21,8 @@ const page = () => {
       {/* <Navbar /> */}
       <ServicesBanner />
       <ChooseArea />
+      <CybersecurityServices/>
+      <AIServices/>
 
 
 
