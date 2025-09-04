@@ -20,7 +20,7 @@ const page = () => {
       <Navbar5 />
       {/* <Navbar /> */}
       <ServicesBanner />
-      <ChooseArea />
+      {/* <ChooseArea /> */}
       <CybersecurityServices/>
       <AIServices/>
 

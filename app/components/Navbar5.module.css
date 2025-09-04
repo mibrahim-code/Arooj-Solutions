@@ -259,6 +259,7 @@
 }
 
 /* Enhanced Floating Icons */
+/* Enhanced Floating Icons */
 .floatingIcons {
   position: fixed;
   bottom: 20px;
@@ -272,10 +273,13 @@
 .floatingIcon {
   display: flex;
   align-items: center;
+  justify-content: center; /* Center content horizontally */
   background-color: #25D366;
   color: white;
-  padding: 12px 15px;
-  border-radius: 50px;
+  width: 50px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  padding: 0; /* Remove padding */
+  border-radius: 50%; /* Perfect circle */
   text-decoration: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
@@ -295,12 +299,11 @@
 .floatingIcon svg {
   width: 20px;
   height: 20px;
-  margin-right: 8px;
+  margin: 0; /* Remove margin since we're centering */
 }
 
 .floatingIcon span {
-  font-size: 14px;
-  font-weight: 500;
+  display: none; /* Hide text to maintain circular shape */
 }
 
 @keyframes float {
@@ -320,10 +323,12 @@
   }
   
   .floatingIcon {
-    padding: 10px 12px;
+    width: 45px; /* Slightly smaller on mobile */
+    height: 45px;
   }
   
-  .floatingIcon span {
-    font-size: 12px;
+  .floatingIcon svg {
+    width: 18px;
+    height: 18px;
   }
 }
