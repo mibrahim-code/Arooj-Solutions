@@ -23,7 +23,7 @@ const page = () => {
       {/* <Navbar /> */}
       <AboutBanner />
       <AboutArea />
-      <ChooseArea />
+      {/* <ChooseArea /> */}
      
       {/* <SkillArea /> */}
       {/* <TestimonialsArea /> */}

@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
-import Link from "next/link";
 
 const AboutBanner = () => {
   useEffect(() => {
@@ -11,7 +10,7 @@ const AboutBanner = () => {
 
   return (
     <div
-      className="page-banner-area bg-2 jarallax"
+      className="page-banner-area bg-2 jarallax mb-12"
       data-jarallax='{"speed": 0.3}'
       style={{
         position: "relative",
@@ -38,15 +37,8 @@ const AboutBanner = () => {
           data-aos-duration="500"
           data-aos-once="true"
         >
-          <h2> معلومات </h2>
-          <ul>
-            <li>
-              <Link href="/" passHref>
-                الصفحة الرئيسية
-              </Link>
-            </li>
-            <li> معلومات </li>
-          </ul>
+          <h2>About Us</h2>
+          
         </div>
       </div>
     </div>

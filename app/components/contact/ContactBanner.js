@@ -3,8 +3,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
-import Link from 'next/link';
-
 const ContactBanner = () => {
   useEffect(() => {
     AOS.init({ duration: 500, once: true });
@@ -30,15 +28,8 @@ const ContactBanner = () => {
           data-aos-duration="500"
           data-aos-once="true"
         >
-          <h2>تواصل</h2>
-          <ul>
-            <li>
-              <Link href="/" passHref>
-              الصفحة الرئيسية
-              </Link>
-            </li>
-            <li>تواصل</li>
-          </ul>
+          <h2>Contact Us</h2>
+          
         </div>
       </div>
     </div>

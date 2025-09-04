@@ -2,8 +2,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
-import ExportedImage from "next-image-export-optimizer";
-import Link from 'next/link';
 
 const ServicesBanner = () => {
   useEffect(() => {
@@ -30,15 +28,8 @@ const ServicesBanner = () => {
           data-aos-duration="500"
           data-aos-once="true"
         >
-          <h2>الخدمات</h2>
-          <ul>
-            <li>
-              <Link href="/" passHref>
-              الصفحة الرئيسية
-              </Link>
-            </li>
-            <li>الخدمات</li>
-          </ul>
+          <h2>Our Services</h2>
+          
         </div>
       </div>
     </div>
