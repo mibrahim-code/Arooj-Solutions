@@ -1,10 +1,11 @@
+/* Navbar5.module.css */
 .customNavbar {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: transparent;
-    color: black;
-    transition: background-color 0.3s ease;
+    color: white;
+    transition: background-color 0.3s ease, color 0.2s ease;
     z-index: 1000;
     padding: 5px 10px;
 }
@@ -19,8 +20,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    max-width: 1200px;   /* keeps everything aligned inside */
-    margin: 0 auto;      /* centers content */
+    max-width: 1200px;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -35,17 +36,24 @@
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 1200; /* Make sure it's above menu */
-    margin-left: auto;   /* push it properly inside */
-    padding: 5px;        /* adds spacing so it's not glued to edge */
+    z-index: 1200;
+    margin-left: auto;
+    padding: 5px;
+    color: white;
+    transition: color 0.2s ease;
+}
+
+.customNavbarScrolled .customNavbarToggle {
+    color: black;
 }
 
 .customNavbarToggle svg {
     width: 28px;
     height: 28px;
-    stroke: black;
+    display: block;
 }
 
+/* Menu layout */
 .customNavbarMenu {
     display: flex;
     list-style: none;
@@ -60,18 +68,28 @@
     position: relative;
 }
 
+/* Default (not scrolled): links white */
 .customNavbarMenuLink,
 .customNavbarMenuLink1 {
-    color: black;
+    color: white;
     text-decoration: none;
     display: flex;
     align-items: center;
+    transition: color 0.15s ease;
 }
 
+/* Hover effect */
+.customNavbarMenuLink:hover,
+.customNavbarMenuLink1:hover {
+    color: #ffd700;
+}
+
+/* Dropdown arrow spacing */
 .customDropdownArrow {
     margin-left: 8px;
 }
 
+/* Dropdown styles */
 .customDropdownMenu {
     display: none;
     position: absolute;
@@ -93,8 +111,10 @@
 .customDropdownMenu li {
     margin: 10px 0;
     padding: 5px 10px;
+    color: black;
 }
 
+/* Search area */
 .customNavbarSearch {
     display: flex;
     align-items: center;
@@ -109,8 +129,16 @@
 .customSearchButton svg {
     width: 24px;
     height: 24px;
+    fill: currentColor;
+    color: white;
+    transition: color 0.2s ease;
 }
 
+.customNavbarScrolled .customSearchButton svg {
+    color: black;
+}
+
+/* Active link styling */
 .activeLink {
     position: relative;
     padding-bottom: 5px;
@@ -141,9 +169,8 @@
     width: 100%;
 }
 
-/* SCROLL STYLES */
+/* SCROLL STATE */
 .customNavbarScrolled {
-    background-color: white;
     color: black;
 }
 
@@ -152,31 +179,30 @@
     color: black;
 }
 
-.customNavbarScrolled .customNavbarToggle svg {
-    stroke: black;
-}
-
-.customNavbarScrolled .customSearchButton svg {
-    fill: black;
+.customNavbarScrolled .customNavbarMenuLink:hover,
+.customNavbarScrolled .customNavbarMenuLink1:hover {
+    color: #ffd700;
 }
 
 /* MOBILE STYLES */
 @media (max-width: 768px) {
     .customNavbar {
-        background-color: white;
+        background-color: transparent;
     }
 
-    .customNavbarMenuLink {
-        color: black;
+    .customNavbarToggle {
+        display: block;
+        order: 2;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .customNavbarLogo {
+        order: 1;
     }
 
     .customNavbarSearch {
-        display: none; /* Hide search on mobile */
-    }
-
-    .customNavbarContent {
-        justify-content: space-between;
-        align-items: center;
+        display: none;
     }
 
     .customNavbarMenu {
@@ -191,26 +217,24 @@
         z-index: 1100;
     }
 
-    /* This will make the menu appear when opened */
     .customNavbarMenu.customNavbarMenuOpen {
         display: flex;
-    }
-
-    .customNavbarToggle {
-        display: block;
-        order: 2;
-        margin-left: auto;   /* ✅ keeps it neatly inside */
-        margin-right: 10px;  /* ✅ prevents it from touching screen edge */
-    }
-
-    .customNavbarLogo {
-        order: 1;
     }
 
     .customNavbarMenuLi {
         margin: 10px 0;
         padding: 10px 20px;
         text-align: center;
+    }
+
+    .customNavbarMenuLink,
+    .customNavbarMenuLink1 {
+        color: white;
+    }
+
+    .customNavbarMenu.customNavbarMenuOpen .customNavbarMenuLink,
+    .customNavbarMenu.customNavbarMenuOpen .customNavbarMenuLink1 {
+        color: black;
     }
 
     .customDropdownMenu {
@@ -230,9 +254,11 @@
     .customDropdownMenu li {
         padding: 10px 20px;
         text-align: center;
+        color: black;
     }
 }
-       /* Floating Icons */
+
+/* Enhanced Floating Icons */
 .floatingIcons {
   position: fixed;
   bottom: 20px;
