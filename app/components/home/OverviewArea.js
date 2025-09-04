@@ -73,7 +73,7 @@ const OverviewArea = () => {
               data-aos-duration="700"
             >
               <h3>Visit Us</h3>
-              <span>Riyadh, Saudi Arabia</span>
+              <span>Arooj Solutions,  2nd Floor, Super Office, As Sulimaniyah, Riyadh 13334</span>
               <div className="overview-shape">
                 <ExportedImage
                   src="/images/overview-shape.png"

@@ -26,7 +26,7 @@ const Footer = () => {
               data-aos-once="true"
             >
               <div className="widget-logo">
-                <Link href="#">
+                <Link href="/">
                   <ExportedImage
                     src="/images/asFooterLogo.png"
                     alt="Logo"
@@ -67,10 +67,10 @@ const Footer = () => {
                 Company
               </h3>
               <ul className="quick-links">
-                <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Home</Link></li>
-                <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">About Us</Link></li>
-                <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Contact</Link></li>
-                <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Our Services</Link></li>
+                <li><Link href="/" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Home</Link></li>
+                <li><Link href="/about" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">About Us</Link></li>
+                <li><Link href="/contact" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Contact</Link></li>
+                <li><Link href="/services" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Our Services</Link></li>
               </ul>
             </div>
           </div>
@@ -88,7 +88,7 @@ const Footer = () => {
                 Services
               </h3>
               <ul className="quick-links">
-                <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Cybersecurity</Link></li>
+                <li><Link href="/" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Cybersecurity</Link></li>
                 <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">AI Solutions</Link></li>
                 <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Compliance</Link></li>
                 <li><Link href="#" className="font-sans text-gray-300 hover:text-purple-400 transition-colors">Training</Link></li>
