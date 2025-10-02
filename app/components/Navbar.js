@@ -165,7 +165,7 @@ const Header = () => {
             <Link href="/" className="text-gray-800">
               <ExportedImage
                 unoptimized={true}
-                src="/images/logoff.webp"
+                src="/images/logoff.png"
                 className={styles.logo}
                 width={100}
                 height={25}
