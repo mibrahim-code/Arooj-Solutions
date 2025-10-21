@@ -52,7 +52,7 @@ const Header = () => {
           <Link href="/" className="flex items-center">
             <ExportedImage
               unoptimized={true}
-              src="/images/logoG.png"
+              src="/images/newlogopurple.png"
               className={styles.logo}
               width={100}
               height={25}

@@ -139,7 +139,7 @@ const Footer = () => {
             <p className="font-sans text-gray-300 flex items-center justify-center gap-2 mt-2">
               Developed By
               <ExportedImage
-                src="/images/copyrightlogo.png"
+                src="/images/newlogowhite.png"
                 alt="Copyright Logo"
                 width={18}
                 height={18}
